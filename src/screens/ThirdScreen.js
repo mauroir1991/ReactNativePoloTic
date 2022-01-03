@@ -13,7 +13,7 @@ export default function ThirdScreen({ navigation }) {
 
     return (
         <View>
-            <Text style={{ marginTop: 200, fontSize: 30 }}>3rd Screen</Text>
+            <Text style={{ marginTop: 50, fontSize: 30 }}>3rd Screen</Text>
             <Button title='Go to HomeScreen' onPress={()=> goHome()} />
             <Button title='Go Back' onPress={()=> goBack()} />
         </View>

@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, FlatList } from 'react-native'
 import TodoItem from './components/todoItem'
 import { connect } from 'react-redux'
 
-const App = ({ data }) => {
+const AppRedux = ({ data }) => {
     console.log(data)
     return (
         <View style={styles.container}>
@@ -33,4 +33,4 @@ const mapStateToProps = state => {
     return {data: state.todos}
 }
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps)(AppRedux);

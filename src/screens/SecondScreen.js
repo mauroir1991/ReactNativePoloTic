@@ -12,7 +12,7 @@ export default function SecondScreen({ navigation }) {
 
     return (
         <View>
-            <Text style={{ marginTop: 200, fontSize: 30 }}>Second Screen</Text>
+            <Text style={{ marginTop: 50, fontSize: 30 }}>Second Screen</Text>
             <Button title='Go to HomeScreen' onPress={()=> goHome()} />
             <Button title='Go to 3rd Screen' onPress={()=> goTo3()} />
         </View>
