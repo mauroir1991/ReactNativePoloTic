@@ -3,8 +3,11 @@ import { StyleSheet, Text, TouchableOpacity } from 'react-native'
 
 function TodoItem({ desc, onPress, completed }){
     return (
-        <TouchableOpacity style={styles.container}>
-            <Text style={styles.text}>{desc}</Text>
+        <TouchableOpacity onPress={onPress} style={styles.container}>
+            {completed ? 
+                <Text style={styles.textCompleted}>{desc}</Text>
+                    :
+                <Text style={styles.text}>{desc}</Text>}
         </TouchableOpacity>
     )
 }
@@ -19,7 +22,8 @@ const styles = StyleSheet.create({
         fontSize: 20
     },
     textCompleted:{
-        fontSize: 20
+        fontSize: 20,
+        textDecorationLine: 'line-through'
     }
 })
 
